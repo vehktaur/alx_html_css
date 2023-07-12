@@ -78,7 +78,8 @@ nav {
 }
 
 .nav__link:hover,
-.nav__link:active {
+.nav__link:active,
+.nav__link:focus {
     color: var(--bg-coral);
 }
 
@@ -90,7 +91,7 @@ nav {
 
 h1 {
     font-size: 2rem;
-    margin-top: 18.61rem;
+    margin-block: 18.61rem 0.31rem;
 }
 
 h2 {
@@ -122,8 +123,8 @@ button {
 }
 
 button:hover,
-button:active {
-    opacity: 0.9;
+button:active button:focus {
+    opacity: 0.85;
 }
 
 .hero__text {
@@ -173,7 +174,9 @@ button:active {
     height: 6.38rem;
 }
 
-.item__img img:hover {
+.item__img img:hover,
+.item__img img:active,
+.item__img img:focus {
     transform: rotateZ(20deg);
     scale: 1.4;
     transition: all 1.5s ease-out;
@@ -215,7 +218,9 @@ button:active {
     position: relative;
 }
 
-figure:hover {
+figure:hover,
+figure:active,
+figure:focus {
     transform: rotateZ(100deg);
     translate: 5rem;
     transition: all 1.5s ease-out;
@@ -271,6 +276,11 @@ form {
     font-size: 1rem;
     padding-block: .5rem;
     border-bottom: solid 1px #333;
+}
+
+.contact__us input::placeholder {
+    font-weight: 600;
+    color: var(--clr-midnight-blue);
 }
 
 /*******FOOTER********/
