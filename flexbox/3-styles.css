@@ -489,18 +489,6 @@ ul.row {
     padding: var(--section-padding);
 }
 
-
-
-.section-works {}
-
-.section-about-us {}
-
-
-
-.section-testimonial {}
-
-.section-contact {}
-
 .section-header {
     padding: var(--section-header-padding);
     text-align: var(--section-header-align);
@@ -565,9 +553,6 @@ ul.row {
 }
 
 /* Section SERVICES ============================= */
-
-.section-services {}
-
 .section-services .row {
     flex-wrap: wrap;
 }
