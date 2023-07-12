@@ -173,7 +173,7 @@ button:active {
     height: 6.38rem;
 }
 
-.item__img img:hover{
+.item__img img:hover {
     transform: rotateZ(20deg);
     scale: 1.4;
     transition: all 1.5s ease-out;
@@ -215,7 +215,7 @@ button:active {
     position: relative;
 }
 
-figure:hover{
+figure:hover {
     transform: rotateZ(100deg);
     translate: 5rem;
     transition: all 1.5s ease-out;
@@ -276,7 +276,7 @@ form {
 /*******FOOTER********/
 footer {
     background-color: var(--clr-midnight-blue);
-    padding-block: 7% 2.13rem;
+    padding-block: clamp(3.44rem, 7%, 5.74rem) 2.13rem;
 }
 
 .footer__logo {
