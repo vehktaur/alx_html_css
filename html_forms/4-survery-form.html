@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form with Select Dropdown, Time, and Date Selection</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Your Name"
+          required
+        /><br /><br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Your Email" required />
+        <br />
+
+        <select name="fav_color" id="fav_color" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        <br /><br />
+        <input type="time" name="time" id="time" required />
+        <br /><br />
+        <input type="date" name="date" id="date" required />
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

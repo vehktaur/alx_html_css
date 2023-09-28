@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form with Checkboxes and File Upload</title>
+  </head>
+  <body>
+    <main>
+      <form enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Your Name"
+          required
+        /><br /><br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Your Email" required />
+        <br />
+        <p>Feedback Options</p>
+        <label for="excellent">Excellent</label>
+        <input type="checkbox" name="excellent" id="excellent" />
+        <label for="good">Good</label>
+        <input type="checkbox" name="good" id="good" />
+        <label for="average">Average</label>
+        <input type="checkbox" name="average" id="average" />
+        <label for="poor">Poor</label>
+        <input type="checkbox" name="poor" id="poor" />
+        <br /><br />
+        <input type="file" name="my_file" id="my_file" required />
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script>
+      const form = document.querySelector('form');
+
+      const validateForm = () => {
+        const checkboxes = document.querySelectorAll('[type="checkbox"]');
+        for (const checkbox of checkboxes) {
+          if (checkbox.checked) {
+            return true;
+          }
+        }
+        return false;
+      };
+
+      form.addEventListener('submit', (event) => {
+        if (!validateForm()) {
+          alert('Please select at least one feedback option.');
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
